@@ -1,8 +1,8 @@
 [![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
-# Project Kaggle competition 
-# TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
+# Project Kaggle competition. 
+## TGS Salt Identification Challenge. Segment salt deposits beneath the Earth's surface.
 
 This is a data science projects based on Kaggle competition: TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
 
