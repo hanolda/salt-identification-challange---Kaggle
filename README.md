@@ -1,15 +1,9 @@
 [![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
-# Data Science Template
-This is a simple starting template for data science projects. It contains many of the essential artifacts that you will
-need and presents a number of best practices including a standard template to guide and gather information relating to 
-the process and specific use case. 
+# Project Kaggle competition: TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
 
-As it is impossible to create a single template that will meet every projects needs, this example should be considered
-a starting point and changed based upon the working and evolution of your project.
-
-Before working with the contents of this template or Data Science projects in general it is recommended to familiarise yourself with the Equinor [Data Science Technical Standards](https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards) (Equinor internal only)
+This is a data science projects based on Kaggle competition: TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
 
 ## Getting Started With This Template
 This git repository contains only this template which is a starting point for your own work. You will need to create your own project specific repository to which you should copy the contents of this template. You can do this manually by download a zipped copy of the files using the "Clone or download" button or with the following commands (substitute myproject with the name of your project and REMOTE-REPOSITORY-URL with the remote repository url).
