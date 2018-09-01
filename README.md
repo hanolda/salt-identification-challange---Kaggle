@@ -32,6 +32,7 @@ The data is a set of images chosen at various locations chosen at random in the 
 
 You should then modify the contents of your new copy as suited (alternatively before adding hte files to git). In particular you might want to do the following:
 
+# Project Template Overview
 * Update this readme file to describe your project including setup, configuration and usage. You might also delete this Getting Started section once you have considered the steps below
 * If using Travis for CI then modify .travis.yml as needed, if not then delete this file / replace with another for e.g. Jenkins. 
 * Change or delete the LICENSE file if your terms are different.
@@ -42,12 +43,9 @@ You should then modify the contents of your new copy as suited (alternatively be
    * notebooks\example.ipynb - import statement
    * setup.py - packages list
 
-All changes should then be comitted to a new repository specific for your project. The setup steps below can then be run to configure the environment on yours, or someone elses computer.
-
-The docs\process_documentation.md file should be completed phase by phase, and each phase result shall be submitted for review and approval before the project moves on to the next phase. This is to assist with the gathering of essential information required to deliver a correct and robust solution. The git respoitory shall be added to the script that populates the [knowledge repository](https://git.statoil.no/DataScience/projects) to ease future knowledge sharing.
 
 
-## Setup
+### Setup
 1. Install git and checkout the [git code repository]
 2. Install [anaconda] python version 3.6+
 3. Change working directory into the git code repository root
@@ -73,7 +71,7 @@ NOTE: When working in the project notebooks from within the Statoil network, you
 `os.environ['HTTP_PROXY']="http://www-proxy.statoil.no:80"`<br />
 `os.environ['HTTPS_PROXY']="http://www-proxy.statoil.no:80"`
 
-## Using the Python Conda environment
+### Using the Python Conda environment
 
 Once the Python Conda environment has been set up, you can
 
@@ -92,7 +90,7 @@ Once the Python Conda environment has been set up, you can
 
   * `conda remove --name my_environment --all`
 
-## Initial File Structure
+### Initial File Structure
 
 ```
 ├── .gitignore               <- Files that should be ignored by git. Add seperate .gitignore files in sub folders if 
@@ -148,7 +146,7 @@ Once the Python Conda environment has been set up, you can
         └── pipeline         <- pipeline tests
 ```
 
-## Testing
+### Testing
 Reproducability and the correct functioning of code are essential to avoid wasted time. If a code block is copied more 
 than once then it should be placed into a common script / module under src and unit tests added. The same applies for 
 any other non trivial code to ensure the correct functioning.
@@ -158,27 +156,6 @@ then from the repository root run
  
 ```pytest```
 
-## Contributing
-Contributions to this template are greatly appreciated and encouraged.
 
-To contribute an update simply:
-* Create a new branch / fork for your updates.
-* Check that your code follows the PEP8 guidelines (line lengths up to 120 are ok) and other general conventions within this document.
-* Ensure that as far as possible there are unit tests covering the functionality of any new code.
-* Check that all existing unit tests still pass.
-* Edit this document if needed to describe new files or other important information.
-* Create a pull request.
 
-## Important Links
-* https://wiki.statoil.no/wiki/index.php/Statoil_Data_Science_Technical_Standards - Data Science Technical Standards (Equinor Internal)
-* https://dataplatformwiki.azurewebsites.net/doku.php - Data Platform wiki (Equinor internal)
-* https://github.com/Statoil/data-science-shared - Shared Data Science Code Repository (Equinor internal)
 
-## References
-* https://github.com/Statoil/data-science-template/ - The master template for this project
-* http://docs.python-guide.org/en/latest/writing/structure/
-* https://github.com/Azure/Microsoft-TDSP
-* https://drivendata.github.io/cookiecutter-data-science/
-
-[//]: #
-   [anaconda]: <https://www.continuum.io/downloads>
