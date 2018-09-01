@@ -1,24 +1,34 @@
 [![](https://travis-ci.org/Statoil/data-science-template.svg?branch=master)](https://travis-ci.org/Statoil/data-science-template?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/Statoil/data-science-template/badge.svg?branch=master)](https://coveralls.io/github/Statoil/data-science-template?branch=master)
 
-# Project Kaggle competition: TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
+# Project Kaggle competition 
+# TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
 
 This is a data science projects based on Kaggle competition: TGS Salt Identification Challenge.Segment salt deposits beneath the Earth's surface.
 
-## Getting Started With This Template
-This git repository contains only this template which is a starting point for your own work. You will need to create your own project specific repository to which you should copy the contents of this template. You can do this manually by download a zipped copy of the files using the "Clone or download" button or with the following commands (substitute myproject with the name of your project and REMOTE-REPOSITORY-URL with the remote repository url).
+## Overview
 
-```
-git clone https://github.com/Statoil/data-science-template myproject
-cd myproject
-rm -rf .git<br/>
-git init<br/>
-git add .<br/>
-git commit -m "Initial commit"<br/>
-git remote add origin REMOTE-REPOSITORY-URL<br/>
-git remote -v<br/>
-git push origin master<br/>
-```
+Several areas of Earth with large accumulations of oil and gas also have huge deposits of salt below the surface.
+
+But unfortunately, knowing where large salt deposits are precisely is very difficult. Professional seismic imaging still requires expert human interpretation of salt bodies. This leads to very subjective, highly variable renderings. More alarmingly, it leads to potentially dangerous situations for oil and gas company drillers.
+
+To create the most accurate seismic images and 3D renderings, TGS (the world’s leading geoscience data company) is hoping Kaggle’s machine learning community will be able to build an algorithm that automatically and accurately identifies if a subsurface target is salt or not.
+
+## Evaluation
+
+This competition is evaluated on the mean average precision at different intersection over union (IoU) thresholds. 
+
+## Data Description
+
+### Background
+Seismic data is collected using reflection seismology, or seismic reflection. The method requires a controlled seismic source of energy, such as compressed air or a seismic vibrator, and sensors record the reflection from rock interfaces within the subsurface. The recorded data is then processed to create a 3D view of earth’s interior. Reflection seismology is similar to X-ray, sonar and echolocation.
+
+A seismic image is produced from imaging the reflection coming from rock boundaries. The seismic image shows the boundaries between different rock types. In theory, the strength of reflection is directly proportional to the difference in the physical properties on either sides of the interface. While seismic images show rock boundaries, they don't say much about the rock themselves; some rocks are easy to identify while some are difficult.
+
+There are several areas of the world where there are vast quantities of salt in the subsurface. One of the challenges of seismic imaging is to identify the part of subsurface which is salt. Salt has characteristics that makes it both simple and hard to identify. Salt density is usually 2.14 g/cc which is lower than most surrounding rocks. The seismic velocity of salt is 4.5 km/sec, which is usually faster than its surrounding rocks. This difference creates a sharp reflection at the salt-sediment interface. Usually salt is an amorphous rock without much internal structure. This means that there is typically not much reflectivity inside the salt, unless there are sediments trapped inside it. The unusually high seismic velocity of salt can create problems with seismic imaging.
+
+### Data
+The data is a set of images chosen at various locations chosen at random in the subsurface. The images are 101 x 101 pixels and each pixel is classified as either salt or sediment. In addition to the seismic images, the depth of the imaged location is provided for each image. The goal of the competition is to segment regions that contain salt. The data is 200 MB zip cointating training and test sets.
 
 You should then modify the contents of your new copy as suited (alternatively before adding hte files to git). In particular you might want to do the following:
 
